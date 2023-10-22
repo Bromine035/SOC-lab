@@ -193,9 +193,9 @@ always @(posedge clk or negedge rst_n) begin
         rtdata <= 0;
         rtval <= 1'b0;
         rtlas <= 1'b0;
-        r0 = 4'd0;
-        r1 = 4'd10;
-        r2 = 4'd11;
+        r0 <= 4'd0;
+        r1 <= 4'd10;
+        r2 <= 4'd11;
     end
     else if(dcst == didl) begin
         rda <= 0;
@@ -206,9 +206,9 @@ always @(posedge clk or negedge rst_n) begin
         rtdata <= 0;
         rtval <= 1'b0;
         rtlas <= 1'b0;
-        r0 = 4'd0;
-        r1 = 4'd10;
-        r2 = 4'd11;
+        r0 <= 4'd0;
+        r1 <= 4'd10;
+        r2 <= 4'd11;
         dcst <= (rap[0])?(dtin):(dcst);
     end
     else if(dcst == dtin) begin
@@ -259,9 +259,9 @@ always @(posedge clk or negedge rst_n) begin
         rtdata <= 0;
         rtval <= 1'b0;
         rtlas <= 1'b0;
-        r0 = 4'd0;
-        r1 = 4'd10;
-        r2 = 4'd11;
+        r0 <= 4'd0;
+        r1 <= 4'd10;
+        r2 <= 4'd11;
     end
 end
 
