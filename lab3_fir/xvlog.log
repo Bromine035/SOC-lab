@@ -1,0 +1,18 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/soc/lab-fir/fir/rtl/fir.v" into library work
+INFO: [VRFC 10-311] analyzing module fir
+WARNING: [VRFC 10-8284] parameter declaration is not allowed here in this mode of Verilog [/home/ubuntu/soc/lab-fir/fir/rtl/fir.v:51]
+WARNING: [VRFC 10-8284] parameter declaration is not allowed here in this mode of Verilog [/home/ubuntu/soc/lab-fir/fir/rtl/fir.v:52]
+WARNING: [VRFC 10-8284] parameter declaration is not allowed here in this mode of Verilog [/home/ubuntu/soc/lab-fir/fir/rtl/fir.v:53]
+WARNING: [VRFC 10-8284] parameter declaration is not allowed here in this mode of Verilog [/home/ubuntu/soc/lab-fir/fir/rtl/fir.v:54]
+WARNING: [VRFC 10-8284] parameter declaration is not allowed here in this mode of Verilog [/home/ubuntu/soc/lab-fir/fir/rtl/fir.v:55]
+WARNING: [VRFC 10-8284] parameter declaration is not allowed here in this mode of Verilog [/home/ubuntu/soc/lab-fir/fir/rtl/fir.v:56]
+WARNING: [VRFC 10-8284] parameter declaration is not allowed here in this mode of Verilog [/home/ubuntu/soc/lab-fir/fir/rtl/fir.v:57]
+WARNING: [VRFC 10-8284] parameter declaration is not allowed here in this mode of Verilog [/home/ubuntu/soc/lab-fir/fir/rtl/fir.v:58]
+WARNING: [VRFC 10-8284] parameter declaration is not allowed here in this mode of Verilog [/home/ubuntu/soc/lab-fir/fir/rtl/fir.v:59]
+WARNING: [VRFC 10-8284] parameter declaration is not allowed here in this mode of Verilog [/home/ubuntu/soc/lab-fir/fir/rtl/fir.v:61]
+WARNING: [VRFC 10-8284] parameter declaration is not allowed here in this mode of Verilog [/home/ubuntu/soc/lab-fir/fir/rtl/fir.v:62]
+WARNING: [VRFC 10-8284] parameter declaration is not allowed here in this mode of Verilog [/home/ubuntu/soc/lab-fir/fir/rtl/fir.v:63]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/soc/lab-fir/fir/tb/fir_tb.v" into library work
+INFO: [VRFC 10-311] analyzing module bram11
+INFO: [VRFC 10-311] analyzing module bram12
+INFO: [VRFC 10-311] analyzing module fir_tb
