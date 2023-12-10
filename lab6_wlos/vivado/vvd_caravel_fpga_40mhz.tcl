@@ -46,7 +46,7 @@ proc checkRequiredFiles { origin_dir} {
  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/uart_ctrl.v"]"\
  "[file normalize "$origin_dir/../rtl/user/user_proj_wrapper_fmqu.v"]" \
  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/bram.v"]" \
- "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/user_proj_example.counter.v"]" \
+ "[file normalize "$origin_dir/../rtl/user/user_proj_example.v"]" \
  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/header/user_defines.v"]"\
  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/header/defines.v"]"\ 
   ]
@@ -215,7 +215,7 @@ set files [list \
  [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/uart_ctrl.v"] \
  [file normalize "${origin_dir}/../rtl/user/user_proj_wrapper_fmqu.v"] \
  [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/bram.v"] \
- [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/user_proj_example.counter.v"] \
+ [file normalize "${origin_dir}/../rtl/user/user_proj_example.v"] \
  [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/header/user_defines.v"] \
  [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/header/defines.v"] \
 ]
@@ -1626,6 +1626,8 @@ create_dashboard_gadget -name {utilization_2} -type utilization
 }
 set obj [get_dashboard_gadgets [ list "utilization_2" ] ]
 set_property -name "reports" -value "impl_1#impl_1_place_report_utilization_0" -objects $obj
+
+set_property STEPS.PHYS_OPT_DESIGN.ARGS.DIRECTIVE ExploreWithHoldFix [get_runs impl_1]
 
 move_dashboard_gadget -name {utilization_1} -row 0 -col 0
 move_dashboard_gadget -name {power_1} -row 1 -col 0
