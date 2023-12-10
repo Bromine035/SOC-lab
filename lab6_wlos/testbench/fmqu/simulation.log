@@ -1,0 +1,38 @@
+Reading fmqu.hex
+fmqu.hex loaded into memory
+Memory 5 bytes = 0x6f 0x00 0x00 0x0b 0x13
+VCD info: dumpfile fmqu.vcd opened for output.
+UART Test 1 started
+LA Test 1 started
+LA Test 2 passed
+LA Test 1 started
+tx data bit index 0: 1
+tx data bit index 1: 0
+tx data bit index 2: 1
+tx data bit index 3: 1
+tx data bit index 4: 1
+tx data bit index 5: 1
+tx data bit index 6: 0
+tx data bit index 7: 0
+tx complete 2
+rx data bit index 0: 1
+rx data bit index 1: 0
+rx data bit index 2: 1
+rx data bit index 3: 1
+rx data bit index 4: 1
+Call function matmul() in User Project BRAM (mprjram, 0x38000000) return value passed, 0x003e
+Call function matmul() in User Project BRAM (mprjram, 0x38000000) return value passed, 0x0044
+Call function matmul() in User Project BRAM (mprjram, 0x38000000) return value passed, 0x004a
+Call function matmul() in User Project BRAM (mprjram, 0x38000000) return value passed, 0x0050
+rx data bit index 5: 1
+LA Test 2 passed
+LA Test 1 started
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  61
+Call function qsort() in User Project BRAM (mprjram, 0x38000000) return value passed, 0x0028
+Call function qsort() in User Project BRAM (mprjram, 0x38000000) return value passed, 0x037d
+Call function qsort() in User Project BRAM (mprjram, 0x38000000) return value passed, 0x09ed
+Call function qsort() in User Project BRAM (mprjram, 0x38000000) return value passed, 0x0a6d
+LA Test 2 passed
+UARt Test 2 passed
