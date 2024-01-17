@@ -91,7 +91,6 @@ wire [127:0] la_data_out;
 // wire [3:0] stt_fifo0, stt_fifo1, stt_fifo2, stt_fifo3, stt_fifo4, stt_fifo5, stt_fifo6, stt_fifo7, stt_fifo8, stt_fifo9, stt_fifo10;
 reg [3:0] cst;
 reg [31:0] wmmd, wmma;
-reg wl_start;
 reg [3:0] stt_fifo [DELAYS-1:0];
 reg [3:0] rnff; // number of fifo
 
@@ -115,15 +114,6 @@ assign wbs_dat_o = user_bram.dat_o;
 assign la_data_out = {127'b0, (user_fir.ou_fin && user_mm.ou_fin && user_qs.ou_fin)};
 assign io_out[32] = (user_fir.ou_fin && user_mm.ou_fin && user_qs.ou_fin);
 assign io_oeb[32] = 1'b0;
-
-always @(posedge clk or posedge rst) begin
-    if(rst) begin
-        wl_start <= 1'b0;
-    end
-    else begin
-        wl_start <= (io_in[31:16] == 16'hAB40 && !(user_fir.ou_fin && user_mm.ou_fin && user_qs.ou_fin));
-    end
-end
 
 always @(*) begin
     if(rst) begin
@@ -223,8 +213,9 @@ exmem_pipeline user_bram (
 );
 
 fir #(.size_t(11), .size_x(16)) user_fir(
-    .clk(clk && wl_start),
+    .clk(clk),
     .rst(rst),
+    .in_sta(io_in[31:16] == 16'hAB40),
     .in_val(user_bram.ack && (stt_fifo[rnff-1] == firr)),
     .in_dat(user_bram.dat_o),
     .in_ouval((cst == firr) || (cst == firw)),
@@ -235,8 +226,9 @@ fir #(.size_t(11), .size_x(16)) user_fir(
     .ou_fin()
 );
 mm #(.size(16)) user_mm(
-    .clk(clk && wl_start),
+    .clk(clk),
     .rst(rst),
+    .in_sta(io_in[31:16] == 16'hAB40),
     .in_val(user_bram.ack && (stt_fifo[rnff-1] == mmr)),
     .in_dat(user_bram.dat_o),
     .in_ouval((cst == mmr) || (cst == mmw)),
@@ -247,8 +239,9 @@ mm #(.size(16)) user_mm(
     .ou_fin()
 );
 qs #(.size(16)) user_qs(
-    .clk(clk && wl_start),
+    .clk(clk),
     .rst(rst),
+    .in_sta(io_in[31:16] == 16'hAB40),
     .in_val(user_bram.ack && (stt_fifo[rnff-1] == qsr)),
     .in_dat(user_bram.dat_o),
     .in_ouval((cst == qsr) || (cst == qsw)),

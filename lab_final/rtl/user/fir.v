@@ -7,6 +7,7 @@ module fir #(
 )(
     clk,
     rst,
+    in_sta,
     in_val,
     in_dat,
     in_ouval,
@@ -19,6 +20,7 @@ module fir #(
 
 input clk;
 input rst;
+input in_sta;
 input in_val;
 input [31:0] in_dat;
 input in_ouval;
@@ -28,7 +30,7 @@ output wire [31:0] ou_dat;
 output wire ou_wrt;
 output wire ou_fin;
 
-parameter init = 3'd0;
+parameter idle = 3'd0;
 parameter dtin = 3'd1;
 parameter stal = 3'd2;
 parameter calc = 3'd3;
@@ -60,7 +62,7 @@ bram11 #(.SIZE(size_x)) dram(.clk(clk), .we((cst == dtin) && in_val && (rr1 == 1
 
 always @(posedge clk or posedge rst) begin
     if(rst) begin
-        cst <= init;
+        cst <= idle;
     end
     else begin
         cst <= nst;
@@ -69,12 +71,12 @@ end
 
 always @(*) begin
     if(rst) begin
-        nst <= init;
+        nst <= idle;
     end
     else begin
         case(cst)
-        init:
-        nst <= dtin;
+        idle:
+        nst <= (in_sta)?(dtin):(idle);
 
         dtin:
         nst <= (rr1 == 2)?(stal):(dtin);
@@ -89,10 +91,10 @@ always @(*) begin
         nst <= (in_ouval)?((rtx == size_x[p1-1:0])?(dead):(calc)):(dtou);
 
         dead:
-        nst <= dead;
+        nst <= (!in_sta)?(idle):(dead);
 
         default:
-        nst <= init;
+        nst <= idle;
         endcase
     end
 end
