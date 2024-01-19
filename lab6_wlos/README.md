@@ -14,4 +14,5 @@
 ./testbench/fmqu/include.rtl.list
 ./testbench/fmqu/run_sim
 ./testbench/uart/uart_tb.v
+./vivado/vvd_caravel_fpga_40mhz.tcl
 ```
