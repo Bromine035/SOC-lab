@@ -1,5 +1,6 @@
 # Final Project: Workload Optimized SoC – DMA & Hardware Accelerators​
 
+YouTube: https://youtu.be/ZQmO00nX94s?si=olwxmwfMCqSNoWJj  
 Power point: https://nycu1-my.sharepoint.com/:p:/g/personal/nycu311511022_ee11_m365_nycu_edu_tw/ETRT4o_ufytDuAeFcQE7NFsBaZ2z0pjE3g2je_GnG67nVw?rtime=Y-88qf0W3Eg 
 
 ## The following files are contributed:  
