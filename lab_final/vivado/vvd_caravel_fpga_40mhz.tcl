@@ -40,13 +40,18 @@ proc checkRequiredFiles { origin_dir} {
  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/soc/mgmt_core_wrapper.v"]"\
  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/soc/mprj_io.v"]"\
  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/soc/caravel.v"]"\
- "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/$user_design_file"]"\
- "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/uart_tx.v"]"\
- "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/uart_rx.v"]"\
- "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/uart_ctrl.v"]"\
- "[file normalize "$origin_dir/../rtl/user/user_proj_wrapper_fmqu.v"]" \
- "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/bram.v"]" \
- "[file normalize "$origin_dir/../rtl/user/user_proj_example.v"]" \
+ "[file normalize "$origin_dir/../rtl/user/bram.v"]"\
+ "[file normalize "$origin_dir/../rtl/user/bram11.v"]"\
+ "[file normalize "$origin_dir/../rtl/user/exmem_pipeline.v"]"\
+ "[file normalize "$origin_dir/../rtl/user/fir.v"]"\
+ "[file normalize "$origin_dir/../rtl/user/mm.v"]"\
+ "[file normalize "$origin_dir/../rtl/user/qs.v"]"\
+ "[file normalize "$origin_dir/../rtl/user/$user_design_file"]"\
+ "[file normalize "$origin_dir/../rtl/user/uart_tx.v"]"\
+ "[file normalize "$origin_dir/../rtl/user/uart_rx.v"]"\
+ "[file normalize "$origin_dir/../rtl/user/uart_ctrl.v"]"\
+ "[file normalize "$origin_dir/../rtl/user/user_proj_wrapper_final.v"]" \
+ "[file normalize "$origin_dir/../rtl/user/user_proj_example_final.v"]" \
  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/header/user_defines.v"]"\
  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/header/defines.v"]"\ 
   ]
@@ -209,13 +214,18 @@ set files [list \
  [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/soc/mgmt_core_wrapper.v"] \
  [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/soc/mprj_io.v"] \
  [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/soc/caravel.v"] \
- [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/${user_design_file}"] \
- [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/uart_tx.v"] \
- [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/uart_rx.v"] \
- [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/uart_ctrl.v"] \
- [file normalize "${origin_dir}/../rtl/user/user_proj_wrapper_fmqu.v"] \
- [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/bram.v"] \
- [file normalize "${origin_dir}/../rtl/user/user_proj_example.v"] \
+ [file normalize "${origin_dir}/../rtl/user/bram.v"]\
+ [file normalize "${origin_dir}/../rtl/user/bram11.v"]\
+ [file normalize "${origin_dir}/../rtl/user/exmem_pipeline.v"]\
+ [file normalize "${origin_dir}/../rtl/user/fir.v"]\
+ [file normalize "${origin_dir}/../rtl/user/mm.v"]\
+ [file normalize "${origin_dir}/../rtl/user/qs.v"]\
+ [file normalize "${origin_dir}/../rtl/user/$user_design_file"]\
+ [file normalize "${origin_dir}/../rtl/user/uart_tx.v"]\
+ [file normalize "${origin_dir}/../rtl/user/uart_rx.v"]\
+ [file normalize "${origin_dir}/../rtl/user/uart_ctrl.v"]\
+ [file normalize "${origin_dir}/../rtl/user/user_proj_wrapper_final.v"] \
+ [file normalize "${origin_dir}/../rtl/user/user_proj_example_final.v"] \
  [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/header/user_defines.v"] \
  [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/header/defines.v"] \
 ]
