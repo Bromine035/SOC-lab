@@ -1,4 +1,4 @@
-# Lab4-1: Caravel SOC User Project (FIR)
+# Lab4-2: Caravel SOC User Project (FIR)
 
 ## The following files are contributed:  
 ```
