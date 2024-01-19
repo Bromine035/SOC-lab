@@ -1,8 +1,12 @@
-# Execute FIR code in user BRAM
+# Lab3: Verilog FIR Design
 
-## Simulation for FIR
-```sh
-cd ~/caravel-soc_fpga-lab/lab-exmem-fir/testbench/counter_la_fir
-source run_clean
-source run_sim
+## The following files are contributed:  
+```
+./testbench/counter_la_fir/fir.c
+./testbench/counter_la_fir/fir.h
+```
+
+## The following files are modified from course materials:
+```
+./testbench/counter_la_fir/counter_la_fir_tb.v
 ```
