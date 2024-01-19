@@ -5,7 +5,7 @@
 lab4-2_caravel_fir/rtl/user/fir.v
 ```
 
-## The following files are modified from course materials:
+## The following files are modified from others:
 ```
 lab4-2_caravel_fir/rtl/user/bram.v
 lab4-2_caravel_fir/rtl/user/bram11.v
