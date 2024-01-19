@@ -1,0 +1,75 @@
+Reading final.hex
+final.hex loaded into memory
+Memory 5 bytes = 0x6f 0x00 0x00 0x0b 0x13
+VCD info: dumpfile final.vcd opened for output.
+UART Test 1 started
+LA Test 1 started
+FIR           0 pass:           0
+FIR           1 pass:         -10
+FIR           2 pass:         -29
+FIR           3 pass:         -25
+FIR           4 pass:          35
+FIR           5 pass:         158
+FIR           6 pass:         337
+FIR           7 pass:         539
+FIR           8 pass:         732
+FIR           9 pass:         915
+FIR          10 pass:        1098
+FIR          11 pass:        1281
+FIR          12 pass:        1464
+FIR          13 pass:        1647
+FIR          14 pass:        1830
+FIR          15 pass:        2013
+MM           0 pass:          62
+MM           1 pass:          68
+MM           2 pass:          74
+MM           3 pass:          80
+MM           4 pass:          62
+MM           5 pass:          68
+MM           6 pass:          74
+MM           7 pass:          80
+MM           8 pass:          62
+MM           9 pass:          68
+MM          10 pass:          74
+MM          11 pass:          80
+MM          12 pass:          62
+MM          13 pass:          68
+MM          14 pass:          74
+MM          15 pass:          80
+QS           0 pass:       -5678
+QS           1 pass:       -1234
+QS           2 pass:       -1234
+QS           3 pass:          -1
+QS           4 pass:           0
+QS           5 pass:           1
+QS           6 pass:          40
+QS           7 pass:         893
+QS           8 pass:        2541
+QS           9 pass:        3233
+QS          10 pass:        4267
+QS          11 pass:        4622
+QS          12 pass:        4622
+QS          13 pass:        5681
+QS          14 pass:        6023
+QS          15 pass:        9073
+LA Test 2 passed
+work load spent cycles:        342, time:       8550 (ns)
+tx data bit index 0: 1
+tx data bit index 1: 0
+tx data bit index 2: 1
+tx data bit index 3: 1
+tx data bit index 4: 1
+tx data bit index 5: 1
+tx data bit index 6: 0
+tx data bit index 7: 0
+tx complete 2
+UARt Test 2 passed
+rx data bit index 0: 1
+rx data bit index 1: 0
+rx data bit index 2: 1
+rx data bit index 3: 1
+rx data bit index 4: 1
+rx data bit index 5: 1
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  61

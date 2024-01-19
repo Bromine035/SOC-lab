@@ -1,0 +1,141 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Mon Jan 15 00:56:39 2024
+[*]
+[dumpfile] "/home/ubuntu/soc/lab_final/testbench/final/final.vcd"
+[dumpfile_mtime] "Mon Jan 15 00:52:23 2024"
+[dumpfile_size] 813067466
+[savefile] "/home/ubuntu/soc/lab_final/testbench/final/wvf.gtkw"
+[timestart] 2481096000
+[size] 1848 905
+[pos] -51 -51
+*-20.000000 2482412500 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] final_tb.
+[treeopen] final_tb.uut.
+[treeopen] final_tb.uut.mprj.
+[treeopen] final_tb.uut.mprj.mprj.
+[sst_width] 233
+[signals_width] 174
+[sst_expanded] 1
+[sst_vpaned_height] 250
+@28
+final_tb.uut.mprj.mprj.clk
+@22
+final_tb.uut.mprj.mprj.cst[3:0]
+@28
+final_tb.uut.mprj.mprj.decoded
+@420
+final_tb.uut.mprj.mprj.i0
+final_tb.uut.mprj.mprj.i1
+@22
+final_tb.uut.mprj.mprj.io_in[37:0]
+final_tb.uut.mprj.mprj.io_oeb[37:0]
+final_tb.uut.mprj.mprj.io_out[37:0]
+@28
+final_tb.uut.mprj.mprj.irq[2:0]
+@22
+final_tb.uut.mprj.mprj.la_data_in[127:0]
+final_tb.uut.mprj.mprj.la_data_out[127:0]
+final_tb.uut.mprj.mprj.la_oenb[127:0]
+final_tb.uut.mprj.mprj.rnff[3:0]
+@28
+final_tb.uut.mprj.mprj.rst
+final_tb.uut.mprj.mprj.valid
+final_tb.uut.mprj.mprj.wb_clk_i
+final_tb.uut.mprj.mprj.wb_rst_i
+final_tb.uut.mprj.mprj.wbs_ack_o
+@22
+final_tb.uut.mprj.mprj.wbs_adr_i[31:0]
+@28
+final_tb.uut.mprj.mprj.wbs_cyc_i
+@22
+final_tb.uut.mprj.mprj.wbs_dat_i[31:0]
+final_tb.uut.mprj.mprj.wbs_dat_o[31:0]
+final_tb.uut.mprj.mprj.wbs_sel_i[3:0]
+@28
+final_tb.uut.mprj.mprj.wbs_stb_i
+final_tb.uut.mprj.mprj.wbs_we_i
+final_tb.uut.mprj.mprj.wl_start
+@22
+final_tb.uut.mprj.mprj.wmma[31:0]
+final_tb.uut.mprj.mprj.wmmd[31:0]
+@28
+final_tb.uut.mprj.mprj.user_fir.clk
+final_tb.uut.mprj.mprj.user_fir.cst[2:0]
+@22
+final_tb.uut.mprj.mprj.user_fir.in_dat[31:0]
+@28
+final_tb.uut.mprj.mprj.user_fir.in_ouval
+final_tb.uut.mprj.mprj.user_fir.in_val
+final_tb.uut.mprj.mprj.user_fir.nst[2:0]
+@22
+final_tb.uut.mprj.mprj.user_fir.ou_adr[31:0]
+final_tb.uut.mprj.mprj.user_fir.ou_dat[31:0]
+@28
+final_tb.uut.mprj.mprj.user_fir.ou_fin
+final_tb.uut.mprj.mprj.user_fir.ou_val
+final_tb.uut.mprj.mprj.user_fir.ou_wrt
+@22
+final_tb.uut.mprj.mprj.user_fir.r0[3:0]
+@28
+final_tb.uut.mprj.mprj.user_fir.r1[1:0]
+@22
+final_tb.uut.mprj.mprj.user_fir.rd[31:0]
+final_tb.uut.mprj.mprj.user_fir.rr0[3:0]
+@28
+final_tb.uut.mprj.mprj.user_fir.rr1[1:0]
+final_tb.uut.mprj.mprj.user_fir.rst
+@22
+final_tb.uut.mprj.mprj.user_fir.rt[3:0]
+@28
+final_tb.uut.mprj.mprj.user_mm.clk
+final_tb.uut.mprj.mprj.user_mm.cst[2:0]
+@22
+final_tb.uut.mprj.mprj.user_mm.in_dat[31:0]
+@28
+final_tb.uut.mprj.mprj.user_mm.in_ouval
+final_tb.uut.mprj.mprj.user_mm.in_val
+final_tb.uut.mprj.mprj.user_mm.nst[2:0]
+@22
+final_tb.uut.mprj.mprj.user_mm.ou_adr[31:0]
+final_tb.uut.mprj.mprj.user_mm.ou_dat[31:0]
+@28
+final_tb.uut.mprj.mprj.user_mm.ou_fin
+final_tb.uut.mprj.mprj.user_mm.ou_val
+final_tb.uut.mprj.mprj.user_mm.ou_wrt
+@22
+final_tb.uut.mprj.mprj.user_mm.r0[3:0]
+@28
+final_tb.uut.mprj.mprj.user_mm.r1[1:0]
+@22
+final_tb.uut.mprj.mprj.user_mm.rd[31:0]
+final_tb.uut.mprj.mprj.user_mm.rr0[3:0]
+@28
+final_tb.uut.mprj.mprj.user_mm.rr1[1:0]
+final_tb.uut.mprj.mprj.user_mm.rst
+final_tb.uut.mprj.mprj.user_qs.clk
+final_tb.uut.mprj.mprj.user_qs.cst[2:0]
+@420
+final_tb.uut.mprj.mprj.user_qs.i0
+@22
+final_tb.uut.mprj.mprj.user_qs.in_dat[31:0]
+@28
+final_tb.uut.mprj.mprj.user_qs.in_ouval
+final_tb.uut.mprj.mprj.user_qs.in_val
+final_tb.uut.mprj.mprj.user_qs.nst[2:0]
+@22
+final_tb.uut.mprj.mprj.user_qs.ou_adr[31:0]
+final_tb.uut.mprj.mprj.user_qs.ou_dat[31:0]
+@28
+final_tb.uut.mprj.mprj.user_qs.ou_fin
+final_tb.uut.mprj.mprj.user_qs.ou_val
+final_tb.uut.mprj.mprj.user_qs.ou_wrt
+@22
+final_tb.uut.mprj.mprj.user_qs.r0[3:0]
+final_tb.uut.mprj.mprj.user_qs.rc[9:0]
+final_tb.uut.mprj.mprj.user_qs.rp[31:0]
+final_tb.uut.mprj.mprj.user_qs.rr0[3:0]
+@28
+final_tb.uut.mprj.mprj.user_qs.rst
+[pattern_trace] 1
+[pattern_trace] 0

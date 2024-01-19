@@ -1,0 +1,15 @@
+rm -f fmqu.hex
+
+riscv32-unknown-elf-gcc -Wl,--no-warn-rwx-segments -g \
+	--save-temps \
+	-Xlinker -Map=output.map \
+	-I../../firmware \
+	-march=rv32i -mabi=ilp32 -D__vexriscv__ \
+	-Wl,-Bstatic,-T,../../firmware/sections.lds,--strip-discarded \
+	-ffreestanding -nostartfiles -o fmqu.elf ../../firmware/crt0_vex.S ../../firmware/isr.c fir.c matmul.c qsort.c uart.c fmqu.c
+# -nostartfiles	
+riscv32-unknown-elf-objcopy -O verilog fmqu.elf fmqu.hex
+riscv32-unknown-elf-objdump -D fmqu.elf > fmqu.out
+
+# to fix flash base address
+sed -ie 's/@10/@00/g' fmqu.hex
