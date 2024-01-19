@@ -1,4 +1,4 @@
-# Lab3: Verilog FIR Design
+# Lab4-1: Execute Code in User Memory
 
 ## The following files are contributed:  
 ```
